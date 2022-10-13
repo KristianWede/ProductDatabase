@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+</head>
+<body>
+<h1 style="color: white">If you see this, you haven't been gnomed *yet*</h1>
+
+
+<h1>Product List</h1>
+<div th:each="p : ${products}">
+    <span th:text="${p}">id</span>
+    <span th:text="${p.toString()}"></span>
+    <span th:text="${p.id}">id</span>
+    <span th:text="${p.name}">navn</span>
+    <span th:text="${p.price}">pris</span>
+</div>
+
+</body>
+</html>
